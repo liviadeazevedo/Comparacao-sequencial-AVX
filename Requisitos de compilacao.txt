@@ -1,0 +1,22 @@
+Parâmetros de compilação:
+
+.MultiplicacaoMatrizes_AVX.c
+
+Parâmetros: (tamanho n) (tamanho n) (run)
+
+Obs: run == 1---->Vetorializado
+     run != 1---->Sequencial
+
+como compilar: gcc MultiplicacoMatrizes_AVX.c -o nomeDoExecutavel -mavx
+		./nomeDoExecutavel (tamanho n) (tamanho n) (run)
+
+Ex: ./nomeDoExecutavel 1000 1000 1 ----> rodar a MulMatrizes com tamanho 1000 x 1000 com o código vetorializado
+
+.MatrizIdentidade_AVX.c
+
+Parâmetros: (tipo da matriz) (tamanho da matriz quadrada n) (run)
+
+como compilar: gcc MatrizIdentidade_AVX.c -o nomeDoExecutavel -mavx
+		./nomeDoExecutavel (tipo da matriz) (tamanho da matriz quadrada n) (run)
+
+Ex: ./nomeDoExecutavel 3 40000 1 ----> rodar a MI 40000x40000 lendo uma MI(3) com o código vetorializado.
